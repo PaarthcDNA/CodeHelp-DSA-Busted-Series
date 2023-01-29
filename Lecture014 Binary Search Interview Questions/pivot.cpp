@@ -8,7 +8,10 @@ int getPivot(int arr[], int n) {
     int mid = s + (e-s)/2;
 
     while(s<e) {
-
+        if(nums[s]<nums[e])
+        {
+          break;
+            }
         if(arr[mid] >= arr[0])
         {
             s = mid+1;
